@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>"Static Resume by Aneela Tasneem - Professional Profile"</h1>
+    <form id="resumeForm"> <!-- Changed 'ResumeForm' to 'resumeForm' -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="surname">Surname: </label> <!-- Corrected 'name' to 'surname' -->
+            <input type="text" id="surname" name="surname"><br>
+
+            <label for="email">Electronic Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone No:</label> <!-- Changed 'Phone' to 'phone' -->
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Physical Address</label>
+            <input type="text" id="address" name="address" required> 
+
+            <label for="profilepicture">Profile Picture</label>
+            <input type="file" id="profilepicture" name="profilepicture" accept="image/*" required>
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label> <!-- Changed 'Education' to 'education' -->
+            <textarea id="education" name="education" rows="4" required></textarea><br>
+        </fieldset>
+
+        <!-- Experience -->
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label> <!-- Changed 'Experience' to 'experience' -->
+            <textarea id="experience" name="experience" rows="4" required></textarea><br>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills</label> <!-- Changed 'Skills' to 'skills' -->
+            <textarea id="skills" name="skills" rows="4" required></textarea><br>
+        </fieldset>
+
+        <button type="submit">Generate Resume Below</button>     
+    </form>
+
+</body>
+</html>
